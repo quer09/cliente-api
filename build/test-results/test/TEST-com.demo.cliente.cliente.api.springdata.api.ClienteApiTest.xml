@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.demo.cliente.cliente.api.springdata.api.ClienteApiTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-28T00:09:49" hostname="PFCTI-ZBOOK-C79" time="3.215">
+  <properties/>
+  <testcase name="obtenerTodosLosClientes()" classname="com.demo.cliente.cliente.api.springdata.api.ClienteApiTest" time="3.215"/>
+  <system-out><![CDATA[18:09:40.741 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Neither @ContextConfiguration nor @ContextHierarchy found for test class [ClienteApiTest]: using SpringBootContextLoader
+18:09:40.747 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader -- Could not detect default resource locations for test class [com.demo.cliente.cliente.api.springdata.api.ClienteApiTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+18:09:40.748 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.demo.cliente.cliente.api.springdata.api.ClienteApiTest]: ClienteApiTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:09:40.782 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using ContextCustomizers for test class [ClienteApiTest]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer, WebTestClientContextCustomizer]
+18:09:40.963 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider -- Identified candidate component class: file [D:\Java\cliente-api\build\classes\java\main\com\demo\cliente\cliente\api\ClienteApiApplication.class]
+18:09:40.974 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.demo.cliente.cliente.api.ClienteApiApplication for test class com.demo.cliente.cliente.api.springdata.api.ClienteApiTest
+18:09:41.164 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using TestExecutionListeners for test class [ClienteApiTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+18:09:41.168 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener -- Before test class: class [ClienteApiTest], class annotated with @DirtiesContext [false] with mode [null]
+18:09:41.180 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener -- Performing dependency injection for test class com.demo.cliente.cliente.api.springdata.api.ClienteApiTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.5)
+
+2023-03-27T18:09:41.640-06:00  INFO 2284 --- [    Test worker] c.d.c.c.a.springdata.api.ClienteApiTest  : Starting ClienteApiTest using Java 17.0.6 with PID 2284 (started by Quervin.Hidalgo in D:\Java\cliente-api)
+2023-03-27T18:09:41.643-06:00  INFO 2284 --- [    Test worker] c.d.c.c.a.springdata.api.ClienteApiTest  : No active profile set, falling back to 1 default profile: "default"
+2023-03-27T18:09:42.595-06:00  INFO 2284 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-27T18:09:43.050-06:00  INFO 2284 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 397 ms. Found 1 JPA repository interfaces.
+2023-03-27T18:09:44.001-06:00  INFO 2284 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-03-27T18:09:44.032-06:00  INFO 2284 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-27T18:09:44.033-06:00  INFO 2284 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-27T18:09:44.216-06:00  INFO 2284 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-27T18:09:44.218-06:00  INFO 2284 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2537 ms
+2023-03-27T18:09:44.304-06:00  INFO 2284 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-27T18:09:44.662-06:00  INFO 2284 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/cliente_db user=
+2023-03-27T18:09:44.665-06:00  INFO 2284 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-27T18:09:44.687-06:00  INFO 2284 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:~/cliente_db'
+2023-03-27T18:09:44.965-06:00  INFO 2284 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-27T18:09:45.055-06:00  INFO 2284 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-03-27T18:09:45.527-06:00  INFO 2284 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Hibernate: drop table if exists cliente cascade 
+Hibernate: create table cliente (id integer generated by default as identity, apellido varchar(255), direccion_domicilio varchar(255), estado boolean not null, identificacion varchar(255), nombre varchar(255), pais_nacimiento varchar(255), pais_residencia varchar(255), telefono_contacto varchar(255), primary key (id))
+2023-03-27T18:09:46.628-06:00  INFO 2284 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-27T18:09:46.664-06:00  INFO 2284 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-27T18:09:48.076-06:00  WARN 2284 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-27T18:09:49.290-06:00  INFO 2284 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 52330 (http) with context path ''
+2023-03-27T18:09:49.319-06:00  INFO 2284 --- [    Test worker] c.d.c.c.a.springdata.api.ClienteApiTest  : Started ClienteApiTest in 8.1 seconds (process running for 10.677)
+2023-03-27T18:09:51.688-06:00  INFO 2284 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-27T18:09:51.689-06:00  INFO 2284 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-27T18:09:51.693-06:00  INFO 2284 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-03-27T18:09:51.763-06:00  INFO 2284 --- [o-auto-1-exec-1] c.d.c.c.api.springdata.api.ClienteApi    : Busqueda de Clientes
+Hibernate: select c1_0.id,c1_0.apellido,c1_0.direccion_domicilio,c1_0.estado,c1_0.identificacion,c1_0.nombre,c1_0.pais_nacimiento,c1_0.pais_residencia,c1_0.telefono_contacto from cliente c1_0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
