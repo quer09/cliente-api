@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "a51ab503-8846-422a-805f-6fd65a4cf58b",
+		"name": "Treaning Java",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AdministracionClientes",
+			"item": [
+				{
+					"name": "ontenerClientes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/v1/api/cliente/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"api",
+								"cliente",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ontenerClientePorIdientificacion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/v1/api/cliente/parameter?identificacion=265",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"api",
+								"cliente",
+								"parameter"
+							],
+							"query": [
+								{
+									"key": "identificacion",
+									"value": "265"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "guardarCliente",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"QUERVIN\",\r\n    \"apellido\": \"HIDALGO\",\r\n    \"identificacion\": \"265\",\r\n    \"direccionDomicilio\": \"Texas\",\r\n    \"telefonoContacto\": \"095239393\",\r\n    \"paisResidencia\": \"US\",\r\n    \"paisNacimiento\": \"CR\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/v1/api/cliente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"api",
+								"cliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizarCliente Copy",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 2,\r\n        \"paisResidencia\": \"EU\",\r\n        \"direccionDomicilio\": \"Barcelona\",\r\n        \"telefonoContacto\": \"564025642\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/v1/api/cliente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"api",
+								"cliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "desactivarCliente",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/v1/api/cliente/deasactivarCliente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"api",
+								"cliente",
+								"deasactivarCliente"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
